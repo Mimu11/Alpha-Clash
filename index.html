@@ -26,7 +26,7 @@
             </div>
         </section>
         <!-- playground screen -->
-        <section id="playground-screen" class="hidden">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center gap-16 pt-20">
                 <!-- screen -->
                 <div
@@ -92,19 +92,20 @@
             </div>
         </section>
         <!-- score screen -->
-        <section class="score hidden flex justify-center items-center min-h-screen gap-8">
+        <section id="final-score" class=" hidden flex justify-center items-center min-h-screen gap-8">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-8 rounded-xl">
+                <h4 class="text-5xl">Game Over !</h4>
                 <h1 class="text-8xl font-extrabold">
                     <span>Score :</span>
-                    <span>14</span>
+                    <span id="last-score">14</span>
                 </h1>
 
-                <button class="btn font-semibold text-2xl">PLay again</button>
+                <button onclick="play()" class="btn font-semibold text-2xl">PLay again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
     </main>
-    <!-- <script src="scripts/utility.js"></script> -->
+    <script src="scripts/utility.js"></script>
     <script src="scripts/alpha-clash.js"></script>
 </body>
 
